@@ -132,7 +132,9 @@ img {
 }
 
 /* HERO */
-
+.hero-container {
+  margin: 0 auto;
+}
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
