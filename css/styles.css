@@ -132,9 +132,7 @@ img {
 }
 
 /* HERO */
-.hero-container {
-  margin: 0 auto;
-}
+
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -148,6 +146,7 @@ img {
   background-size: cover;
   background-position: center;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-paragraph {
