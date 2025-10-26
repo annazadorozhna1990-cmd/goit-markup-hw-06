@@ -867,29 +867,16 @@ margin-bottom: 96px; }
 }
 
 @media only screen and (min-width: 768px){
-  .footer-container {
-    flex-direction: column;
-    align-items: stretch; 
-    text-align: left;     
-  }
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 72px;
-  }
-  .logo-paragraf {
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 0;
-    max-width: 264px;
-  }
+.for-wrap{
+  display: flex;
+ align-items: flex-start; 
+ justify-content: flex-start;
+  gap: 24px; 
+}
 .icons-footer {
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 0;
-    max-width: 208px;
-  }
+    padding-top: 96px;}
+
+
 .footer-for {
     flex-direction: row;
     justify-content: center;
