@@ -239,6 +239,9 @@ button {
   visibility: visible;
   pointer-events: auto;
 }
+.address {
+  font-style: normal;
+}
 
 .mobail-menu-container {
   position: relative;
@@ -327,12 +330,11 @@ button {
   fill: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials {
+.mob-socials {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 8px;
+  justify-content: left;
   list-style: none;
+  gap: 40px;
 }
 
 .footer .socials {
@@ -388,6 +390,7 @@ button {
   margin: 0 auto;
   margin-bottom: 72px;
 }
+
 .hero-button {
   background-color: #4d5ae5;
   font-weight: 500;
@@ -414,7 +417,7 @@ button {
 @media only screen and (min-width: 768px) {
   .hero {
     padding-top: 112px;
-    padding-bottom: 36px;
+    padding-bottom: 112px;
     max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -435,7 +438,6 @@ button {
 
   .hero-paragraph {
     font-size: 56px;
-    line-height: 1.07;
     max-width: 496px;
     margin-bottom: 36px;
   }
@@ -461,16 +463,15 @@ button {
         url(../images/bg-desk@2x-min.jpg);
     }
   }
-}
-.hero-paragraph {
-  font-size: 56px;
-  max-width: 496px;
-  margin-bottom: 48px;
+  .hero-paragraph {
+    margin-bottom: 48px;
+  }
 }
 
 /* ADVANTAGES */
 .section-advantages {
-  padding: 96px 16px 96px 16px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .advantages-list {
@@ -508,6 +509,7 @@ button {
 @media only screen and (min-width: 768px) {
   .advantages-list {
     gap: 24px;
+    row-gap: 72px;
   }
 
   .advantages-list-paragraph {
@@ -686,9 +688,9 @@ button {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
-.portfolio-item {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* .portfolio-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+/* } */
 .portfolio-warapper {
   position: relative;
   overflow: hidden;
@@ -711,9 +713,6 @@ button {
 }
 .portfolio-item:hover .overlay-text {
   transform: translateY(0%);
-}
-.portfolio-item:nth-last-child(2):hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item {
@@ -771,8 +770,8 @@ button {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
-  .portfolio-list > .portfolio-item:nth-last-child(2) {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  .portfolio-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -957,7 +956,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 72px 16px 16px 24px;
+  padding: 72px 16px 24px 16px;
   z-index: 10;
   border-radius: 4px;
   width: 288px;
@@ -1114,6 +1113,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  white-space: normal;
 }
 .accent-text-agreement {
   line-height: 1.33;
@@ -1123,6 +1123,8 @@ button {
 }
 .form-agreement {
   margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
 }
 .footer-button.modal-button-send {
   display: block;
